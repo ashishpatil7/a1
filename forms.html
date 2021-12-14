@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        span{
+
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form method="POST" action="https://www.yahoo.com" novalidate> -->
+
+        <form method="POST" action="https://www.yahoo.com" >
+
+
+
+        <fieldset>
+
+            <legend>User Details</legend>
+            <p>
+
+           <span>*</span> <label for="fname">First Name</label>
+
+                <input type="text" id="fname" placeholder="Enter your First Name !" autocomplete="off" required />
+            </p>
+
+            <p>
+
+                <span>*</span>     <label for="lname">Last Name</label>
+
+                <input type="text" id="lname" required />
+            </p>
+
+
+            <p>
+
+                <label>Email</label>
+
+                <input type="email" />
+            </p>
+
+            <p>
+
+                <label>Password</label>
+
+                <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}" 
+                title="Use 6-20 characters, at least 1 uppercase letter and 1 number."
+                
+                />
+            </p>
+        </fieldset>
+
+
+        <fieldset>
+            <legend> Personal Details</legend>
+
+            <p>
+                <label>BirthDate</label>
+
+                <input type="date" />
+            </p>
+
+            <p>
+
+                <label>Gender</label>
+
+                <label>Male</label>
+                <input type="radio" value="Male"/>
+
+                <label>FeMale</label>
+                <input type="radio" value="FeMale"/>
+            </p>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Address Details</legend>
+
+
+
+            <p>
+                <label>Phone Number</label>
+
+                <input type="number" />
+            </p>
+
+            <p>
+
+                <label>Area Code</label>
+
+                <input type="text" minlength="3" maxlength="7" />
+            </p>
+
+          
+        </fieldset>
+
+
+
+        <button>Submit</button>
+
+        <button formnovalidate formmethod="GET" formaction="https://www.google.com" >Cancel</button>
+
+        <button formmethod="GET" formaction="https://www.microsoft.com">Change</button>
+
+    </form>
+</body>
+</html>
